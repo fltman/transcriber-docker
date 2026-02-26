@@ -47,8 +47,11 @@ COPY --from=frontend-builder /src/requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt
 
-# Copy whisper.cpp binary
+# Copy whisper.cpp binary and shared library
 COPY --from=whisper-builder /whisper.cpp/build/bin/whisper-cli /usr/local/bin/whisper-cli
+COPY --from=whisper-builder /whisper.cpp/build/src/libwhisper.so* /usr/local/lib/
+COPY --from=whisper-builder /whisper.cpp/build/ggml/src/libggml*.so* /usr/local/lib/
+RUN ldconfig
 
 # Copy built frontend
 COPY --from=frontend-builder /src/frontend/dist /app/frontend/dist
