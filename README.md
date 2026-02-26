@@ -8,16 +8,21 @@ Download and install from https://www.docker.com/products/docker-desktop/
 
 Works on Mac, Windows, and Linux. Just follow the installer.
 
-## Step 2: Start Transcriber
+## Step 2: Download
 
-Download this repository (green **Code** button > **Download ZIP**), unzip it, then double-click:
+- **Mac**: Download [Transcriber.dmg](https://github.com/fltman/transcriber-docker/releases/latest/download/Transcriber.dmg), open it, and copy the **Transcriber** folder to your computer (e.g. Desktop or Documents).
+- **Windows**: Click the green **Code** button above, choose **Download ZIP**, and unzip it.
+
+## Step 3: Start Transcriber
+
+Open the Transcriber folder and double-click:
 
 - **Mac**: `start.command`
 - **Windows**: `start.bat`
 
 The first start downloads and builds everything needed (~7 GB) and may take 10-15 minutes. Your browser will open automatically when it's ready.
 
-## Step 3: Configure
+## Step 4: Configure
 
 Go to http://localhost:8080, click the **settings icon** (top right), then the **Preferences** tab.
 
