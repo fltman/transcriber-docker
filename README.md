@@ -17,7 +17,7 @@ Works on Mac, Windows, and Linux. Just follow the installer.
 
 Open the Transcriber folder and double-click:
 
-- **Mac**: `start.command`
+- **Mac**: **Start Transcriber** app
 - **Windows**: `start.bat`
 
 The first start downloads and builds everything needed (~7 GB) and may take 10-15 minutes. Your browser will open automatically when it's ready.
@@ -30,7 +30,7 @@ Enter your **Hugging Face token** (needed for speaker identification). Get a fre
 
 ## Stopping
 
-Double-click `stop.command` (Mac) or `stop.bat` (Windows). Or just quit Docker Desktop.
+Double-click **Stop Transcriber** app (Mac) or `stop.bat` (Windows). Or just quit Docker Desktop.
 
 ## Updating
 
